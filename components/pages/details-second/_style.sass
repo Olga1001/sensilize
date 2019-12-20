@@ -1,0 +1,219 @@
+.details
+  &-flex
+    display: flex
+    align-items: center
+    width: 100%
+    justify-content: space-between
+    &-end
+      display: flex
+      align-items: center
+      svg
+        margin-left: 16px
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 22px
+    &-row
+      display: flex
+    &-input
+      display: block
+      border: none
+      padding: 0
+      width: 100%
+      &::-webkit-input-placeholder
+        color: #697F9C
+        font-size: 12px
+      &:-moz-placeholder
+        color: #697F9C
+        font-size: 12px
+      &::-moz-placeholder
+        color: #697F9C
+        font-size: 12px
+      &:-ms-input-placeholder
+        color: #697F9C
+        font-size: 12px
+    &-field
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 80px
+      margin: 0 15px
+      position: relative
+.yellow
+  color: #FFF400
+  opacity: 0.5
+.orange
+  color: #F49800
+  opacity: 0.5
+.pink-light
+  color: #FF8369
+  opacity: 0.5
+.violet
+  color: #A4ABFF
+  opacity: 0.5
+.change
+  position: absolute
+  right: 0
+  top: 0
+  height: 100%
+  width: 6px
+  &-down, &-up
+    width: 6px
+    height: 10px
+    border: 5px solid rgba(#697F9C, 0.5)
+    border-right: 4px solid transparent
+    border-left: 4px solid transparent
+    position: absolute
+    right: 0
+  &-up
+    top: -1px
+    border-top: 0px solid transparent
+  &-down
+    bottom: -1px
+    border-bottom: 0px solid transparent
+.search
+  position: relative
+  &-link
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 26px
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &-icon
+    width: 13px
+    height: 13px
+  &-input
+    background: rgba(#697F9C, 0.2)
+    border-radius: 15px
+    max-width: 220px
+    width: 100%
+    padding: 5px 13px 5px 35px
+    border: none
+.cards
+  display: flex
+  flex-wrap: wrap
+  overflow-y: auto
+  height: calc(100vh - 60px - 44px - 30px - 22px)
+  &::-webkit-scrollbar-track
+    background: rgba(#697F9C, 0.2)
+    border-radius: 5.5px
+  &::-webkit-scrollbar
+    width: 10px
+    background: rgba(#697F9C, 0.2)
+    border-radius: 5.5px
+  &::-webkit-scrollbar-thumb
+    background: rgba(#697F9C, 0.49)
+    border-radius: 5.5px
+.card
+  width: calc(50% - 10px)
+  margin: 0 10px 10px 0
+  background: #212933
+  .details-between
+    margin-bottom: 0
+    align-items: inherit
+  &-top
+    display: flex
+    padding: 15px
+  &-img
+    width: 132px
+    height: 87px
+    object-fit: cover
+  &-col
+    width: 100%
+    padding-left: 15px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &-title, &-ha
+    font-family: "SFUIText-Bold", sans-serif
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.2px
+    text-transform: uppercase
+    color: #FFFFFF
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  &-ha
+    letter-spacing: inherit
+    text-transform: lowercase
+  &-gray, &-green
+    font-family: "SFUIText-Bold", sans-serif
+    font-size: 11px
+    line-height: 13px
+    color: #697F9C
+  &-green
+    color: #96DC56
+  .details-setting
+    margin-bottom: 0
+  &-link
+    margin-left: 18px
+  &-bottom
+    display: flex
+    &-link
+      width: 50%
+      text-align: center
+      line-height: 50px
+      font-family: "SFUIText-Bold", sans-serif
+      font-size: 12px
+      text-transform: uppercase
+      color: #FFFFFF
+      background: rgba(#697F9C, 0.5)
+      &:last-child
+        background: rgba(#697F9C, 0.2)
+.table
+  &-row
+    display: flex
+    border-top: 1px solid rgba(#697F9C, 0.2)
+    width: 100%
+  &-whole
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 15px
+    height: 50px
+  &-left
+    display: flex
+    align-items: center
+  &-gray
+    font-size: 12px
+    line-height: 14px
+    font-family: "SFUIText-Medium", sans-serif
+    color: #697F9C
+  &-icon
+    margin-right: 11px
+    width: 20px
+    object-fit: contain
+  &-three
+    display: flex
+    align-items: center
+    width: 33%
+    border-right: 1px solid rgba(#697F9C, 0.2)
+    padding: 0 15px
+    &:last-child
+      border: none
+  &-sixty
+    align-items: center
+    display: flex
+    width: 66%
+    padding: 0 15px
+  &-three, &-sixty
+    height: 50px
+  &-orange
+    color: #FFB02F
+  &-white
+    color: #ffffff
+    font-size: 12px
+    line-height: 14px
+    font-family: "SFUIText-Medium", sans-serif
+.underlain
+  text-decoration-line: underline
+
+
+

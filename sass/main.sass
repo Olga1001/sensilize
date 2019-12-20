@@ -1,0 +1,406 @@
+@import "fonts"
+@import "vars"
+
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #414F60
+  font-family: "SFUIText-Regular", sans-serif
+  line-height: 20px
+  font-size: 13px
+
+*:-moz-placeholder
+  color: #414F60
+  font-family: "SFUIText-Regular", sans-serif
+  line-height: 20px
+  font-size: 13px
+
+*::-moz-placeholder
+  color: #414F60
+  font-family: "SFUIText-Regular", sans-serif
+  line-height: 20px
+  font-size: 13px
+
+*:-ms-input-placeholder
+  color: #414F60
+  font-family: "SFUIText-Regular", sans-serif
+  line-height: 20px
+  font-size: 13px
+
+::-webkit-scrollbar-track
+  background: rgba(#212933, 0.2)
+  border-radius: 5.5px
+::-webkit-scrollbar
+  width: 10px
+  background: rgba(#212933, 0.2)
+  border-radius: 5.5px
+::-webkit-scrollbar-thumb
+  background: rgba(#212933, 0.49)
+  border-radius: 5.5px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: transparent
+
+body input:required:valid,
+body textarea:required:valid
+  color: #414F60
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+  text-decoration: none
+a[href^="tel"]
+  color: inherit
+  text-decoration: none
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  position: relative
+  line-height: normal
+  font-family: "SFUIText-Regular", sans-serif
+img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+input, textarea
+  font-size: 13px
+  outline: none
+  width: 100%
+  box-sizing: border-box
+  border: 3px solid #414F60
+  border-radius: 3px
+  background: none
+  font-family: "SFUIText-Regular", sans-serif
+  line-height: 15px
+  color: #FFFFFF
+input
+  width: 100%
+  padding: 5px 14px
+  line-height: 20px
+button
+  cursor: pointer
+  outline: none
+  border: none
+
+.header
+  background: #1B1F25
+  padding: 18px 20px 19px
+  border-bottom: 1px solid rgba(#697F9C, 0.5)
+  &-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-logo
+    width: 130px
+    object-fit: contain
+  &-menu
+    display: flex
+    align-items: center
+  &-list
+    margin: 0 20px
+  &-link
+    display: block
+    font-family: "SFUIText-Regular", sans-serif
+    font-size: 11px
+    line-height: 13px
+    color: #697F9C
+    transition: all 0.25s ease
+    padding: 0 10px
+    text-align: center
+    &.active
+      color: #FFFFFF
+      font-family: "SFUIText-Medium", sans-serif
+  &-right
+    display: flex
+    align-items: center
+  &-massage
+    position: relative
+    margin-right: 30px
+    &-icon
+      width: 26px
+      height: 18px
+    &-span
+      background: #96DC56
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      position: absolute
+      top: -3px
+      right: -3px
+  &-user
+    display: flex
+    align-items: center
+    &-icon
+      width: 22px
+      height: 22px
+      margin-right: 8.5px
+    &-number
+      font-family: "SFUIText-Medium", sans-serif
+      font-size: 16px
+      line-height: 19px
+      color: #697F9C
+.btn
+  border: 1px solid #FFFFFF
+  box-sizing: border-box
+  border-radius: 3px
+  line-height: 48px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: "SFUIText-Bold", sans-serif
+  font-size: 12px
+  text-transform: uppercase
+  color: #FFFFFF
+  background: none
+  min-width: 246px
+  transition: all 0.25s ease
+  margin-top: 11px
+  &.active
+    background: #697F9C
+    border: 1px solid #697F9C
+  &-arrow
+    width: 8px
+    height: 5px
+    border: 5px solid #ffffff
+    border-right: 4px solid transparent
+    border-left: 4px solid transparent
+    border-bottom: 0px solid transparent
+    margin-left: 9px
+    transition: all 0.25s ease
+  &-gray
+    color: #697F9C
+    border: 1px solid #697F9C
+  &-green
+    color: #96DC56
+    border: 1px solid #96DC56
+    width: 100%
+    &.active
+      background: #96DC56
+      color: #ffffff
+      border: 1px solid #96DC56
+  &-two
+    border: 1px solid #697F9C
+    box-sizing: border-box
+    border-radius: 3px
+    width: 36px
+    height: 36px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: none
+    margin-right: 7px
+  &-img
+    width: 14px
+    height: 14px
+
+
+
+.dropdown
+  position: absolute
+  left: 0
+  width: 100%
+  top: 100%
+  opacity: 0
+  pointer-events: none
+  transition: all 0.25s ease
+  z-index: 2
+  &-menu
+    padding-top: 8px
+  &-link
+    background: #697F9C
+    font-family: "SFUIText-Regular", sans-serif
+    font-size: 13px
+    line-height: 60px
+    text-align: center
+    color: #FFFFFF
+    transition: all 0.25s ease
+    cursor: pointer
+    display: block
+    &:first-child
+      border-radius: 3px 3px 0 0
+    &:last-child
+      border-radius: 0 0 3px 3px
+    &.active, &:hover
+      background: #455467
+
+
+.select
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: 15px
+    top: 50%
+    transform: translateY(-50%)
+    width: 6px
+    height: 4px
+    border: 5px solid #ffffff
+    z-index: 1
+    border-right: 3px solid transparent
+    border-left: 3px solid transparent
+    border-bottom: 0px solid transparent
+  &-dropdown
+    position: absolute
+    left: 0
+    top: 100%
+    width: 100%
+    padding-top: 8px
+    z-index: 2
+    display: none
+    &-menu
+      margin-top: 7px
+      max-height: 195px
+      height: 100%
+      overflow-y: auto
+    &-list
+      font-family: "SFUIText-Regular", sans-serif
+      font-size: 13px
+      line-height: 25px
+      color: #FFFFFF
+  &-menu
+    background: #697F9C
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5)
+    border-radius: 3px
+    padding: 0 15px 8px
+  &-search
+    border: none
+    border-bottom: 1px solid rgba(#212933, 0.5)
+    padding: 9px 14px 9px 20px
+    background: url("../img/search.svg") no-repeat 0 center / 13px 13px
+  &-input
+    position: relative
+    background: #414F60
+    cursor: pointer
+.select-input:focus ~ .select-dropdown, .select-input:active ~ .select-dropdown, .select-dropdown:hover
+  display: block
+.btn:focus ~ .dropdown, .btn:active ~ .dropdown, .dropdown:hover
+  display: block
+
+.pink
+  color: #D892FF
+.red
+  color: #FF5858
+
+.date
+  input
+    background: #414F60
+.vdp-datepicker__calendar
+  background: #697F9C!important
+  border: none!important
+  max-width: 262px
+  width: 100%
+  border-radius: 3px
+  padding: 20px
+  top: calc(100% + 7px)
+.vdp-datepicker__calendar header
+  line-height: 1
+  height: 30px
+  position: relative
+  justify-content: space-between
+  border-bottom: 1px solid rgba(#212933, 0.5)
+  padding-bottom: 10px
+.vdp-datepicker__calendar header .prev, .vdp-datepicker__calendar header .next
+  width: 7px!important
+  height: 16px
+  position: absolute!important
+  &:after
+    content: none!important
+.vdp-datepicker__calendar header .prev
+  background: url("../img/prev.svg") no-repeat center / 7px 11px
+  left: auto
+  right: 30px
+.vdp-datepicker__calendar header .next
+  background: url("../img/next.svg") no-repeat center / 7px 11px
+  left: auto
+  right: 0
+  &:before
+    content: ''
+    position: absolute
+    left: -12px
+    top: 0
+    width: 1px
+    height: 16px
+    background: rgba(#FFFFFF, 0.5)
+.day__month_btn.up
+  text-align: left
+  font-family: "SFUIText-Medium", sans-serif
+  font-size: 13px
+  line-height: 16px
+  color: #FFFFFF
+
+.vdp-datepicker__calendar header .prev:not(.disabled):hover
+  background: url("../img/prev.svg") no-repeat center / 7px 11px!important
+.vdp-datepicker__calendar header .next:not(.disabled):hover
+  background: url("../img/next.svg") no-repeat center / 7px 11px!important
+
+.vdp-datepicker__calendar header .up:not(.disabled):hover
+  background-color: transparent!important
+.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover
+  border: none!important
+.vdp-datepicker__calendar .cell.selected
+  background: transparent!important
+.vdp-datepicker__calendar .cell.day-header, .vdp-datepicker__calendar .cell
+  font-family: "SFUIText-Medium", sans-serif
+  font-size: 13px!important
+  height: 25px!important
+  line-height: 16px
+  color: #FFFFFF
+  mix-blend-mode: normal
+  text-transform: uppercase
+  opacity: 0.5
+  padding: 5px 0
+  margin-top: 5px
+.vdp-datepicker__calendar .cell.day
+  opacity: 1
+  display: inline-flex!important
+  align-items: center
+  justify-content: center
+.vdp-datepicker__calendar header span
+  color: #FFFFFF
+  font-family: "SFUIText-Medium", sans-serif
+  font-size: 13px!important
+  text-align: left!important
+body > div > div > div.details-main.details-main-two > ul > li:nth-child(1) > div.season-row > div:nth-child(1) > div:nth-child(2) > div > div > div > div:nth-child(4) > header > span:nth-child(2), span.month__year_btn.up
+  text-align: left
+  line-height: 16px
+@import "../components/pages/details-one/style"
+@import "../components/pages/details-second/style"
+
+@import "media"
+// Всегда в конце
