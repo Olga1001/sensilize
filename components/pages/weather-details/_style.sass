@@ -1,0 +1,332 @@
+//weather details style
+.weather
+  &-graphic
+    display: flex
+    margin-top: 34px
+  &-details
+    .season-row
+      border: none
+      width: 100%
+      flex-wrap: nowrap
+    .season-col
+      width: 100%
+      max-width: 220px
+    &-text
+      font-family: "SFUIText-Medium", sans-serif
+      font-size: 16px
+      line-height: 19px
+      color: #697F9C
+      margin-bottom: 15px
+    .weather-row
+      max-width: 175px
+      width: 100%
+      border-right: 1px solid rgba(#697F9C, 0.5)
+      padding-right: 22px
+      margin: 0
+    .details-id, .details-ha
+      font-size: 16px
+      line-height: 19px
+      margin-bottom: 15px
+    .weather-item
+      width: auto
+      margin: 0 17px 0 0
+    .weather-flex
+      padding: 0 18px
+    .details-col
+      padding-top: 2px
+    .select
+      max-width: 220px
+      width: 100%
+  &-panel
+    display: flex
+    align-items: center
+    padding: 12px 0
+  &-content
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 40px 0 24px
+  &-overflow
+    height: calc(100vh - 60px - 44px - 38px)
+    overflow-y: auto
+    padding-right: 15px
+    &::-webkit-scrollbar-track
+      background: rgba(#697F9C, 0.2)
+      border-radius: 5.5px
+    &::-webkit-scrollbar
+      width: 10px
+      background: rgba(#697F9C, 0.2)
+      border-radius: 5.5px
+    &::-webkit-scrollbar-thumb
+      background: rgba(#697F9C, 0.49)
+      border-radius: 5.5px
+  &-date
+    display: flex
+    align-items: center
+    &-item
+      font-family: "SFUIText-Medium", sans-serif
+      font-size: 13px
+      line-height: 15px
+      color: #F5F6FF
+      margin: 0 25px
+  &-arrow
+    background: none
+    border: 3px solid #ffffff
+    border-bottom: 3px solid transparent
+    border-top: 3px solid transparent
+    width: 7px
+    height: 5px
+    &-next
+      border-right: 0px solid transparent
+      &:hover
+        border: 3px solid #697F9C
+        border-bottom: 3px solid transparent
+        border-top: 3px solid transparent
+        border-right: 0px solid transparent
+    &-prev
+      border-left: 0px solid transparent
+      &:hover
+        border: 3px solid #697F9C
+        border-bottom: 3px solid transparent
+        border-top: 3px solid transparent
+        border-left: 0px solid transparent
+  &-forecast
+    display: flex
+    justify-content: space-between
+    margin: 34px 0 17px
+    .weather-details-text
+      margin: 0
+
+
+.tabs
+  display: flex
+.tab
+  font-family: "SFUIText-Medium", sans-serif
+  font-size: 13px
+  line-height: 15px
+  color: #697F9C
+  margin-left: 40px
+  transition: all 0.25s ease
+  cursor: pointer
+  padding: 5px 0
+  &.active, &:hover
+    color: #FFFFFF
+.content
+  padding-bottom: 35px
+  &-table
+    display: none
+    flex-wrap: wrap
+    &.active
+      display: flex
+  &-col
+    width: 16.66%
+    border-right: 1px solid rgba(#697F9C, 0.2)
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: #212933
+    padding-bottom: 25px
+    &:last-child
+      border-right: none
+  &-time
+    font-family: "SFUIText-Medium", sans-serif
+    text-align: center
+    font-size: 13px
+    line-height: 15px
+    color: #697F9C
+    border-bottom: 1px solid rgba(#697F9C, 0.2)
+    padding: 12px 0 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+  &-weather
+    display: flex
+    align-items: center
+    margin-top: 15px
+    &:first-child
+      margin-bottom: 25px
+      .content-text
+        font-size: 16px
+        line-height: 19px
+  &-icon
+    width: 20px
+    display: flex
+    justify-content: flex-start
+    margin-right: 18px
+  &-text
+    font-family: "SFUIText-Semibold", sans-serif
+    font-size: 13px
+    line-height: 15px
+    display: flex
+    color: #FFFFFF
+    &-span
+      color: #697F9C
+      margin-left: 3px
+  &-box
+    padding-top: 5px
+  &-forecast
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 44px
+    .content-col
+      width: calc(16.66% - 13px)
+      margin-right: 15px
+      border: none
+      &:last-child
+        margin-right: 0
+    .content-weather:first-child
+      margin-bottom: 25px
+      .content-text
+        font-size: 13px
+        line-height: 15px
+  &-date
+    color: #FFFFFF
+    margin-bottom: 5px
+.icon
+  &-sun
+    height: 17px
+  &-wind
+    height: 14px
+  &-humidity
+    height: 15px
+  &-cloud
+    height: 11px
+  &-pressure
+    height: 13px
+.weather-checkboxes
+  display: flex
+.label
+  display: flex
+  align-items: center
+  margin-right: 35px
+  position: relative
+  cursor: pointer
+.check
+  border-radius: 3px
+  width: 21px
+  height: 21px
+  margin-right: 13px
+  display: block
+.checkbox
+  &-pink
+    background-color: #FF8369
+  &-blue
+    background-color: #1A99E5
+  &-green
+    background-color: #96DC56
+  &-wind
+    background: #697F9C
+  &-text
+    font-family: "SFUIText-Medium", sans-serif
+    font-size: 13px
+    line-height: 15px
+    color: #FFFFFF
+.checkbox
+  display: none
+  position: absolute
+  left: 0
+  top: 0
+  &:checked ~ .check
+    display: block
+    background-image: url("../img/check.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 13px 100%
+.graphic
+  &-forecast
+    display: flex
+    margin: 32px 0 40px
+    .graphic-mid
+      width: calc(100% - 77px - 24px)
+    .graphic-row
+      height: 5.4vw
+    .graphic-list
+      height: 5.6vw
+    .graphic-bottom .graphic-col, .graphic-col
+      width: 16.66%
+      justify-content: center
+    .graphic-month
+      width: auto
+      margin: 0
+  &-wind
+    .graphic-row
+      height: 3.95vw
+    .graphic-list
+      height: 4.2vw
+  &-list
+    height: 4.5vw
+    margin-top: -0.33vw
+    &:last-child
+      height: 0
+      margin-top: 0
+  &-degrees, &-month
+    font-family: "SFUIText-Regular", sans-serif
+    //font-size: 11px
+    font-size: 0.76vw
+    //line-height: 13px
+    line-height: 0.9vw
+    text-align: right
+    color: #FFFFFF
+    display: flex
+  &-left
+    width: 41px
+    .graphic-degrees
+      justify-content: flex-end
+  &-right
+    width: 44px
+  &-mid
+    margin: 0 12px
+    width: calc(100% - 85px - 24px)
+  &-grid
+    display: flex
+    width: 100%
+    border: 1px solid rgba(#697F9C, 0.5)
+    box-sizing: border-box
+  &-col
+    width: 20%
+    &:last-child
+      .graphic-row
+        border-right: none
+  &-row
+    width: 100%
+    height: 4.2vw
+    border-right: 1px dashed rgba(#697F9C, 0.5)
+    border-bottom: 1px dashed rgba(#697F9C, 0.5)
+    &:last-child
+      border-bottom: none
+  &-bottom
+    display: flex
+    margin-top: 11px
+    .graphic-col
+      display: flex
+      justify-content: flex-end
+  &-month
+    display: block
+    text-align: center
+    min-width: 25px
+    //margin-right: -12.5px
+    margin-right: -0.87vw
+.add-field
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid #96DC56
+  color: #96DC56
+  font-family: "SFUIText-Bold", sans-serif
+  font-size: 11px
+  text-transform: uppercase
+  line-height: 28px
+  padding: 0 13px
+  border-radius: 3px
+  margin-left: 17px
+  &-span
+    display: block
+    border: 4px solid #96DC56
+    border-left: 4px solid transparent
+    border-right: 4px solid transparent
+    border-bottom: 0px solid transparent
+    height: 4px
+    margin-left: 10px

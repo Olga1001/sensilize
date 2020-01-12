@@ -1,0 +1,291 @@
+//weather style
+.weather
+  &-container
+    background: url("../img/image.jpg") no-repeat center / cover
+    width: 100%
+    min-height: 100%
+    display: flex
+    justify-content: space-between
+  &-degrees
+    display: flex
+    align-items: center
+    &-icon
+      width: 36px
+      height: 36px
+      object-fit: contain
+      margin-right: 6px
+    &-num
+      font-family: "SFUIText-Semibold", sans-serif
+      font-size: 21px
+      line-height: 25px
+      color: #FFFFFF
+  &-col
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    padding: 20px 20px 25px 15px
+    min-height: 100%
+    width: calc(100% - 320px)
+    &-top
+      background: rgba(#1B1F25, 0.5)
+      mix-blend-mode: normal
+      border-radius: 3px
+      padding: 11px 0
+      display: flex
+      justify-content: space-between
+      max-width: 380px
+      width: 100%
+    &-bottom
+      width: 100%
+      max-width: 740px
+  &-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 17px
+
+  &-flex
+    display: flex
+    flex-wrap: wrap
+  &-item
+    display: flex
+    align-items: center
+    width: 50%
+    margin-bottom: 12px
+    &:last-child, &:nth-last-child(2)
+      margin-bottom: 0
+    svg
+      width: 20px
+      object-fit: contain
+      margin-right: 10px
+    &-text
+      font-family: "SFUIText-Medium", sans-serif
+      font-size: 11px
+      line-height: 14px
+      color: #697F9C
+    &-span
+      display: flex
+      align-items: baseline
+      color: #FFFFFF
+      margin-bottom: 5px
+  &-share
+    width: 12px
+    height: 12px
+    transform: rotate(-30deg)
+    margin-left: 3px
+  &-block
+    width: 50%
+    padding: 0 15px 0 16px
+    border-right: 1px solid rgba(#697F9C, 0.5)
+    &:nth-child(2n+2)
+      border: none
+      padding: 0 20px 0 15px
+  &-right
+    max-width: 320px
+    width: 100%
+    background: rgba( #1B1F25, 0.8)
+    &-top
+      padding: 25px 25px 15px 21px
+      border-bottom: 1px solid rgba(#697F9C, 0.5)
+    .details-location
+      text-decoration: underline
+    .weather-item-text
+      font-size: 13px
+      line-height: 15px
+    .weather-row
+      margin-bottom: 0
+      padding: 19px 25px 19px 16px
+      border-bottom: 1px solid rgba(#000000, 0.5)
+    &-row
+      position: relative
+      text-align: center
+      width: 100%
+      margin-bottom: 17px
+    .details-location-icon
+      margin-right: 9px
+    .weather-flex
+      padding: 16px 25px 14px 21px
+      border-bottom: 1px solid rgba(#000000, 0.5)
+    .weather-share
+      width: 15px
+      height: 15px
+    .weather-item
+      margin-bottom: 8px
+      svg
+        margin-right: 14px
+  &-burger
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 16px
+    height: 11px
+  &-title
+    font-family: "SFUIText-Bold", sans-serif
+    font-size: 13px
+    line-height: 15px
+    text-transform: uppercase
+    color: #697F9C
+  &-area
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    .details-setting
+      margin: 0
+  &-name
+    font-family: "SFUIText-Medium", sans-serif
+    font-size: 14px
+    line-height: 16px
+    color: #FFFFFF
+  &-report
+    padding: 23px 19px
+    &-ul
+      margin-top: 20px
+      height: calc(100vh - 465px)
+      overflow-y: auto
+      &::-webkit-scrollbar-track
+        background: rgba(#697F9C, 0.2)
+        border-radius: 5.5px
+      &::-webkit-scrollbar
+        width: 10px
+        background: rgba(#697F9C, 0.2)
+        border-radius: 5.5px
+      &::-webkit-scrollbar-thumb
+        background: rgba(#697F9C, 0.49)
+        border-radius: 5.5px
+    &-li
+      display: flex
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+    &-flex
+      display: flex
+      flex-wrap: wrap
+      width: calc(100% - 25px)
+      padding: 0 27px
+    &-info
+      width: 50%
+      display: flex
+      margin-bottom: 13px
+      svg
+        width: 20px
+        margin-right: 13px
+    &-item
+      font-family: "SFUIText-Semibold", sans-serif
+      font-size: 13px
+      line-height: 15px
+      color: #FFFFFF
+      display: flex
+      align-items: center
+  &-time
+    font-family: "SFUIText-Regular", sans-serif
+    font-size: 13px
+    line-height: 15px
+    color: #FFFFFF
+.vegetation
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  &-top
+    display: flex
+    margin: 10px 0
+    align-items: center
+    width: calc(100% - 148px)
+  &-lv
+    font-family: "SFUIText-Bold", sans-serif
+    font-size: 10px
+    line-height: 1
+    text-transform: uppercase
+    color: #FFFFFf
+  &-colors
+    margin: 0 11px
+    display: flex
+    width: calc(100% - 80px)
+  &-color
+    width: 5.55%
+    height: 7px
+  &-bottom
+    display: flex
+    width: 100%
+  &-share
+    background: rgba(#1B1F25, 0.5)
+    padding: 9px 11px 10px
+  &-icon
+    height: 21px
+    width: 20px
+    object-fit: contain
+  &-arrows
+    display: flex
+    align-items: center
+  &-arrow
+    background: none
+    padding: 2px 10px
+    &-prev
+      border-right: 1px solid rgba(#697F9C, 0.5)
+    &-icon
+      transform: scale(1.2)
+  &-date
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 5px 0 20px
+    background: rgba(#1B1F25, 0.5)
+    border-radius: 3px
+    width: calc(100% - 148px)
+    &-ul
+      display: flex
+      width: calc(100% - 100px)
+      padding-left: 14px
+      overflow: hidden
+    &-li
+      font-family: "SFUIText-Regular", sans-serif
+      font-size: 12px
+      line-height: 1
+      color: #FFFFFF
+      padding: 13px 5px
+      transition: all 0.25s ease
+      cursor: pointer
+      width: 14%
+      text-align: center
+      display: inline-table
+      white-space: nowrap
+      &.active, &:hover
+        color: #96DC56
+  &-title
+    font-family: "SFUIText-Medium", sans-serif
+    font-size: 12px
+    line-height: 1
+    color: #697F9C
+.btns
+  display: flex
+  padding: 12px 2px 13px
+  background: rgba(#1B1F25, 0.5)
+  mix-blend-mode: normal
+  border-radius: 3px
+  margin: 0 10px
+.btn
+  &-change
+    background: none
+    position: relative
+    height: 15px
+    width: 40px
+    padding: 0 14px
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      background: #ffffff
+      width: 15px
+      height: 1px
+.minus
+  &:after
+    content: none
+.plus
+  border-right: 1px solid rgba(#697F9C, 0.5)
+  &:after
+    height: 15px
+    width: 1px
