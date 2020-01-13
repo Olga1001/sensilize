@@ -3,11 +3,12 @@
   &-graphic
     display: flex
     margin-top: 34px
+    max-width: 1010px
+    width: 100%
   &-details
     .season-row
       border: none
       width: 100%
-      flex-wrap: nowrap
     .season-col
       width: 100%
       max-width: 220px
@@ -44,6 +45,7 @@
   &-content
     &-top
       display: flex
+      flex-wrap: wrap
       justify-content: space-between
       align-items: center
       margin: 40px 0 24px
@@ -113,20 +115,21 @@
   &.active, &:hover
     color: #FFFFFF
 .content
-  padding-bottom: 35px
+  padding-bottom: 20px
   &-table
     display: none
     flex-wrap: wrap
     &.active
       display: flex
   &-col
-    width: 16.66%
+    width: 169px
     border-right: 1px solid rgba(#697F9C, 0.2)
     display: flex
     flex-direction: column
     align-items: center
     background: #212933
     padding-bottom: 25px
+    margin-bottom: 15px
     &:last-child
       border-right: none
   &-time
@@ -170,9 +173,11 @@
   &-forecast
     display: flex
     flex-wrap: wrap
-    margin-bottom: 44px
+    margin-bottom: 30px
     .content-col
       width: calc(16.66% - 13px)
+      min-width: 156px
+      max-width: 235px
       margin-right: 15px
       border: none
       &:last-child
@@ -239,12 +244,14 @@
   &-forecast
     display: flex
     margin: 32px 0 40px
+    max-width: 1010px
+    width: 100%
     .graphic-mid
       width: calc(100% - 77px - 24px)
     .graphic-row
-      height: 5.4vw
+      height: 78px
     .graphic-list
-      height: 5.6vw
+      height: 81px
     .graphic-bottom .graphic-col, .graphic-col
       width: 16.66%
       justify-content: center
@@ -253,32 +260,28 @@
       margin: 0
   &-wind
     .graphic-row
-      height: 3.95vw
+      height: 57px
     .graphic-list
-      height: 4.2vw
+      height: 61px
   &-list
-    height: 4.5vw
-    margin-top: -0.33vw
+    height: 64px
+    margin-top: -5px
     &:last-child
       height: 0
       margin-top: 0
   &-degrees, &-month
     font-family: "SFUIText-Regular", sans-serif
-    //font-size: 11px
-    font-size: 0.76vw
-    //line-height: 13px
-    line-height: 0.9vw
+    font-size: 11px
+    line-height: 13px
     text-align: right
     color: #FFFFFF
     display: flex
   &-left
-    //width: 41px
-    width: 2.85vw
+    width: 41px
     .graphic-degrees
       justify-content: flex-end
   &-right
-    //width: 44px
-    width: 3.05vw
+    width: 44px
   &-mid
     margin: 0 12px
     width: calc(100% - 2.85vw - 3.05vw - 24px)
@@ -294,7 +297,7 @@
         border-right: none
   &-row
     width: 100%
-    height: 4.2vw
+    height: 60px
     border-right: 1px dashed rgba(#697F9C, 0.5)
     border-bottom: 1px dashed rgba(#697F9C, 0.5)
     &:last-child
